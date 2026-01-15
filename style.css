@@ -1,13 +1,19 @@
+  /* 1. styles the whole page background */
+
 body, html {
-    background-color: lightcyan; 
+    background-color: rgb(85, 110, 110); 
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
   }
   
   h1 {
     color: navy;
+    text-align: center;
+    font-size: 48px;
   }
   
+/* 2. colors the page header */
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -20,6 +26,8 @@ body, html {
     float: left;
   }
   
+/* 3. displays the header text as white and removes the underline */
+
   li a {
     display: block;
     color: white;
@@ -27,17 +35,16 @@ body, html {
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  #website {
-    border-style: solid;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-  }
-  
+  /* 4. displays a border with uppcase text*/ 
+#website {
+  border-style: solid;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+
   .parallax {
     /* The image used */
     background-image: url("assets/square.png");
@@ -65,3 +72,21 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
+/* gives header texts a backrground when hovered over*/
+  li a:hover {
+  background-color: white;
+  color: navy;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#special {
+  background-color: white;
+  border: 2px dashed navy;
+  padding: 12px;
+}
